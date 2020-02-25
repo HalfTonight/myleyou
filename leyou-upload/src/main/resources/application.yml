@@ -1,0 +1,23 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: leyou-upload
+  servlet:
+    multipart:
+      max-file-size: 5MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5 #每隔5秒向注册中心发送信息，相当于心跳机制
+    lease-expiration-duration-in-seconds: 10 #10秒钟没有发就表示过期
+fdfs:
+  so-timeout: 1500 #过期时间
+  connect-timeout: 600 #超时时间
+  thumb-image:
+    width: 60
+    height: 60
+  tracker-list:
+    - 192.168.11.128:22122

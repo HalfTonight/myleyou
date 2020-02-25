@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e113740-49cc-49fd-b342-6992ffe1851e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="E:\Maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XQ93IVrwJsvULeExOcMsQ2X6uH" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8.0_221" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Leyou-protal" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.leyou.search.client" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leyou.search.config" />
+      <recent name="com.leyou.pojo" />
+      <recent name="com.leyou.upload.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Leyou\leyou-goods-web\src\main\java\com\leyou\goods\client" />
+      <recent name="G:\Leyou\leyou-search\src\main\resources" />
+      <recent name="G:\Leyou\leyou-goods-web\src\main\resources\templates" />
+      <recent name="G:\Leyou\leyou-upload\src\test\java\com\leyou" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.FastDFSTest.testUpload">
+    <configuration name="ElasticsearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.search.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leyou.search.client" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.search.client.ElasticsearchTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticsearchTest.createIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.search.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leyou.search.client" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.search.client.ElasticsearchTest" />
+      <option name="METHOD_NAME" value="createIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticsearchTest.createIndexAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.search.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leyou.search.client" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.search.client.ElasticsearchTest" />
+      <option name="METHOD_NAME" value="createIndexAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastDFSTest.testUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-upload" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.upload.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leyou.upload.test" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.upload.test.FastDFSTest" />
+      <option name="METHOD_NAME" value="testUpload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouGoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-goods-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouGoodsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-item-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouItemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="leyou-registy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouRegistryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouSearchApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeyouUploadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-upload" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.upload.LeyouUploadApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ElasticsearchTest.createIndex" />
+      <item itemvalue="JUnit.ElasticsearchTest" />
+      <item itemvalue="JUnit.ElasticsearchTest.createIndexAll" />
+      <item itemvalue="JUnit.FastDFSTest.testUpload" />
+      <item itemvalue="Spring Boot.LeyouGatewayApplication" />
+      <item itemvalue="Spring Boot.LeyouItemApplication" />
+      <item itemvalue="Spring Boot.LeyouSearchApplication" />
+      <item itemvalue="Spring Boot.LeyouUploadApplication" />
+      <item itemvalue="Spring Boot.LeyouGoodsApplication" />
+      <item itemvalue="Spring Boot.LeyouRegistryApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LeyouRegistryApplication" />
+        <item itemvalue="JUnit.FastDFSTest.testUpload" />
+        <item itemvalue="JUnit.ElasticsearchTest.createIndexAll" />
+        <item itemvalue="JUnit.ElasticsearchTest.createIndex" />
+        <item itemvalue="JUnit.ElasticsearchTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.24385247" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e113740-49cc-49fd-b342-6992ffe1851e" name="Default Changelist" comment="" />
+      <created>1580967250946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580967250946</updated>
+      <workItem from="1580967255621" duration="155000" />
+      <workItem from="1580967430941" duration="1315000" />
+      <workItem from="1580968796237" duration="3815000" />
+      <workItem from="1580972639828" duration="2377000" />
+      <workItem from="1581132225660" duration="867000" />
+      <workItem from="1581152433474" duration="5420000" />
+      <workItem from="1581173658733" duration="1063000" />
+      <workItem from="1581207415299" duration="5152000" />
+      <workItem from="1581251306229" duration="75000" />
+      <workItem from="1581301427911" duration="12641000" />
+      <workItem from="1581413413076" duration="3592000" />
+      <workItem from="1581419094386" duration="2144000" />
+      <workItem from="1581471691453" duration="3654000" />
+      <workItem from="1581479248365" duration="1424000" />
+      <workItem from="1581561264225" duration="3209000" />
+      <workItem from="1581644595863" duration="7209000" />
+      <workItem from="1581730423159" duration="5625000" />
+      <workItem from="1581771679926" duration="4744000" />
+      <workItem from="1581815024798" duration="6722000" />
+      <workItem from="1582076996694" duration="148000" />
+      <workItem from="1582077388844" duration="11389000" />
+      <workItem from="1582094846140" duration="12638000" />
+      <workItem from="1582161757303" duration="808000" />
+      <workItem from="1582163327242" duration="13775000" />
+      <workItem from="1582244701505" duration="7020000" />
+      <workItem from="1582333595499" duration="17628000" />
+      <workItem from="1582418841778" duration="6145000" />
+      <workItem from="1582431007942" duration="23461000" />
+      <workItem from="1582505772717" duration="10823000" />
+      <workItem from="1582538932161" duration="13741000" />
+      <workItem from="1582589718851" duration="3973000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1582247076350">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1582247076350" />
+    <state x="407" y="64" key="#SearchApplication" timestamp="1582081481570">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="64" key="#SearchApplication/0.0.1536.824@0.0.1536.824" timestamp="1582081481570" />
+    <state x="483" y="207" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1582086017711">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="483" y="207" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1536.824@0.0.1536.824" timestamp="1582086017711" />
+    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1582359875137">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582359875137" />
+    <state x="499" y="193" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1582094948112">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="193" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1582094948112" />
+    <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581155966982">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1581155966982" />
+    <state x="620" y="124" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1580967881508">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="620" y="124" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1580967881508" />
+    <state x="376" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582080012662">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="376" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1582080012662" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1582592438433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582592438433" />
+    <state width="1106" height="275" key="GridCell.Tab.0.bottom" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.0.center" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.0.left" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.0.right" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.1.bottom" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.1.center" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.1.left" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.1.right" timestamp="1582595354927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582595354927" />
+    <state width="1106" height="275" key="GridCell.Tab.2.bottom" timestamp="1582593926196">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582593926196" />
+    <state width="1106" height="275" key="GridCell.Tab.2.center" timestamp="1582593926196">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582593926196" />
+    <state width="1106" height="275" key="GridCell.Tab.2.left" timestamp="1582593926196">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582593926196" />
+    <state width="1106" height="275" key="GridCell.Tab.2.right" timestamp="1582593926196">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1106" height="275" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582593926196" />
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog" timestamp="1582093984529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1582093984529" />
+    <state x="408" y="113" key="NewModule_or_Project.wizard" timestamp="1581156177939">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="408" y="113" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1581156177939" />
+    <state x="270" y="0" width="1206" height="708" key="SettingsEditor" timestamp="1582425125299">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="0" width="1206" height="708" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582425125299" />
+    <state x="565" y="193" key="chooseDestDirectoryDialog" timestamp="1582094952226">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="565" y="193" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1582094952226" />
+    <state x="540" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582093708359">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1582093708359" />
+    <state x="499" y="172" key="extract.method.dialog" timestamp="1581777869161">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="172" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1581777869161" />
+    <state x="142" y="178" width="1180" height="484" key="new project wizard" timestamp="1582424946594">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="142" y="178" width="1180" height="484" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582424946594" />
+    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1582510227747">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582510227747" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="spu.id" />
+        <watch expression="spu.lastUpdateTime" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
