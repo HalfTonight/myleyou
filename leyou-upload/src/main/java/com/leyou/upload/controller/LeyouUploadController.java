@@ -19,7 +19,6 @@ public class LeyouUploadController {
     private UploadService uploadService;
     @PostMapping("image")
     public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file){
-        System.out.println("1111");
         String url =this.uploadService.uploadImage(file);//返回一个文件储存的url
         if(StringUtils.isBlank(url)){
             return ResponseEntity.badRequest().build();

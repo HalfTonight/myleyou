@@ -12,3 +12,6 @@ eureka:
   server:
     enable-self-preservation: false #关闭自我保护机制
     eviction-interval-timer-in-ms: 10000 #超时时间
+ribbon:
+  eureka:
+    enabled: true

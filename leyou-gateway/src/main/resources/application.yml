@@ -2,22 +2,64 @@ server:
   port: 10010
 spring:
   application:
-    name: leyou-registry
+    name: leyou-gateway
+  cloud:
+    refresh:
+      refreshable: none  #不加入会造成循环依赖?
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:10086/eureka
     registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
 zuul:
   prefix: /api
   routes:
     item-service: /item/** #路由到商品的微服务
     search-service: /search/** #路由到搜索的微服务
-  max:
-    host:
-      connections: 500
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+    user-service: /user/** #路由到用户的微服务
+    cart-service: /cart/**
+    auth-service: /auth/**
+    order-service: /order/**
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+    connection-request-timeout-millis: 500000000
+  add-host-header: true #允许携带本身的头信息
+  sensitive-headers:  #配置禁止使用的头信息
 ribbon:
-  ConnectTimeout: 3000
-  ReadTimeout: 60000
+  ConnectTimeout: 1000 # 连接超时时间(ms)
+  ReadTimeout: 3500 # 通信超时时间(ms)
+
+  #关闭重试,避免重复提交请求
+  #  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 0 # 同一服务不同实例的重试次数
+  MaxAutoRetries: 0 # 同一实例的重试次数
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecond: 5000 # 熔断超时时长：5000ms
+  eureka:
+    enabled: false
+
+leyou:
+  jwt:
+    pubKeyPath: C:\\key\\tem\\rsa\\rsa.pub
+    CookeName: Half
+  filter:
+    whiteList:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item
+#数组用-
+
+
 

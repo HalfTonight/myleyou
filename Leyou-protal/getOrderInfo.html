@@ -116,8 +116,8 @@
 					</div>
 					<div class="step-cont">
 						<ul class="payType">
-							<li :class="{selected: paymentType===1}" @click="paymentType=1">微信付款<span title="点击取消选择"></span></li>
-							<li :class="{selected: paymentType===2}" @click="paymentType=2">货到付款<span title="点击取消选择"></span></li>
+							<li :class="{selected: order.paymentType===1}" @click="order.paymentType=1">微信付款<span title="点击取消选择"></span></li>
+							<li :class="{selected: order.paymentType===2}" @click="order.paymentType=2">货到付款<span title="点击取消选择"></span></li>
 						</ul>
 					</div>
 					<div class="hr"></div>
@@ -148,7 +148,7 @@
 											<div class="num">X{{c.num}}</div>
 										</li>
 										<li class="yui3-u-1-12">
-											<div class="exit">{{c.stock > c.num ? '有货' : '缺货'}}</div>
+											<div class="exit" >有货</div>
 										</li>
 									</ul>
 								</div>
@@ -177,7 +177,7 @@
 		<div class="order-summary">
 			<div class="static fr">
 				<div class="list">
-					<span><i class="number">{{carts.length}}</i>件商品，总商品金额</span>
+					<span><i class="number">{{total}}</i>件商品，总商品金额</span>
 					<em class="allprice">¥{{ly.formatPrice(totalPrice)}}</em>
 				</div>
 				<div class="list">
@@ -198,7 +198,7 @@
 			</div>
 		</div>
 		<div class="submit">
-			<a class="sui-btn btn-danger btn-xlarge" href="#" @click.prevent="submit">提交订单</a>
+			<a class="sui-btn btn-danger btn-xlarge" href="javascript:void(0);" @click="submit">提交订单</a>
 		</div>
 	</div>
 
@@ -206,6 +206,7 @@
 	<script src="./js/vue/vue.js"></script>
 	<script src="./js/axios.min.js"></script>
 	<script src="./js/common.js"></script>
+	<script>Vue.config.productionTip=false</script>
 	<script type="text/javascript">
         var orderInfoVm = new Vue({
             el:"#orderInfoApp",
@@ -214,7 +215,7 @@
                 addressList:[// 可选地址列表,假数据，需要从后台查询
 					{
 					    id: 1,
-					    name:"虎哥",// 收件人姓名
+					    name:"张三",// 收件人姓名
 						phone:"15800000000",// 电话
 						state:"上海",// 省份
 						city:"上海",// 城市
@@ -225,7 +226,7 @@
 					},
                     {
                         id: 2,
-                        name:"张三",// 收件人姓名
+                        name:"李四",// 收件人姓名
                         phone:"13600000000",// 电话
                         state:"北京",// 省份
                         city:"北京",// 城市
@@ -237,7 +238,11 @@
 				],
 				selectedAddress: {},
 				carts: [],
-                paymentType: 1,
+				order: {
+					paymentType: 1,
+					postFee: 20
+				},
+
             },
 			created(){
                 // 初始化默认地址
@@ -245,7 +250,7 @@
                 // 判断是否登录
                 ly.http.get("/auth/verify").then(() => {
                     // 获取已选中的购物车
-                    this.carts = ly.store.get("selectedCarts");
+                    this.carts = ly.store.get("SELECT_CART");
 				}).catch(() => {
 				    // 未登录则跳转到登录页
 				    window.location.href = "/login.html?returnUrl=" + window.location.href;
@@ -253,36 +258,49 @@
 			},
 			methods:{
                 submit(){
-                    ly.http.get("/auth/verify").then(() => {
-                        // 对carts处理
-						const carts = this.carts.map(({skuId, num}) => ({skuId, num}));
-						const order = {
-                            paymentType: this.paymentType, // 支付方式
-                            carts: carts, // 订单详情
-                            addressId: this.selectedAddress.id,// 收获地址的id
-                        };
-                        // 提交订单
-						ly.http.post("/order-service/order",order,{
-                            transformResponse: [function (data) {
-                                return data;
-                            }]
-						}).then(resp=>{
-                            // 订单创建成功，删除selectedCarts
-                            ly.store.del("selectedCarts");
-                            // 跳转到付款页,并传递订单id
-                            window.location.href = "/pay.html?id=" + resp.data;
-						}).catch(() => {
-						    alert("创建订单失败！");
-						})
-                    }).catch(() => {
-                        window.location.href = "/login.html?returnUrl=" + window.location.href;
-                    })
+					ly.http.get("/auth/verify").then(()=>{
+						let obj = {
+							receiver: this.selectedAddress.name,
+							receiverState: this.selectedAddress.state,
+							receiverCity: this.selectedAddress.city,
+							receiverAddress: this.selectedAddress.address,
+							receiverDistrict: this.selectedAddress.district,
+							receiverMobile: this.selectedAddress.phone,
+							receiverZip: this.selectedAddress.zipCode,
+							invoiceType:0,
+							sourceType:2
+						};
 
+						const orderDatial={orderDatial:this.carts};
+						//把上面封装的值付给order
+						Object.assign(this.order,obj,orderDatial,{totalPay:this.totalPrice,actualPay:this.totalPrice,
+										buyerMessage:null,buyerNick:this.selectedAddress.name});
+						ly.http.post("/order/order",this.order,{
+							//防止失真
+							transformResponse: [
+								function(data){
+									return data;
+								}
+							]
+						}).then(({data})=>{
+							window.location="http://www.leyou.com/pay.html?orderId="+data+"&totalPrice="+this.totalPrice;
+							ly.store.del("SELECT_CART");
+
+						}).catch((error)=>{
+							window.location="http://www.leyou.com/pay.html";
+							console.log(error);
+						});
+					}).then(()=>{
+
+					})
 				}
 			},
 			computed:{
                 totalPrice(){
                     return this.carts.map(c => c.price * c.num).reduce((v1, v2) => v1 + v2, 0);
+				},
+				total(){
+                	return this.carts.map(c=> c.num).reduce((c1,c2)=>c1+c2,0);
 				}
 			},
 			components:{

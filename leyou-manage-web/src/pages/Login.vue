@@ -34,7 +34,7 @@
     </v-content>
     <v-dialog v-model="dialog" width="300px">
       <v-alert icon="warning" color="error" :value="true">
-      用户名和密码不能为空
+      用户名或密码错误，请重新输入
       </v-alert>
     </v-dialog>
   </v-app>
@@ -50,12 +50,12 @@ export default {
   }),
   methods: {
     doLogin() {
-      if (!this.username || !this.password) {
+      if (this.username!="admin"|| this.password!="admin") {
         this.dialog = true;
         return false;
       }
       console.log(this.username + " ... " + this.password);
-      this.$router.push("/");
+      this.$router.push("/index/dashboard");
     }
   }
 };

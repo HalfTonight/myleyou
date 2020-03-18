@@ -47,4 +47,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/js/widget/nav-portal-top.js" />
+  </component>
 </project>

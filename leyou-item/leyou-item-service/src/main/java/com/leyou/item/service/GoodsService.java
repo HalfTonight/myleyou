@@ -178,7 +178,7 @@ public class GoodsService {
         return Arrays.asList(category1,category2,category3);
     }
 
-    public Spu querySkuById(Long id) {
+    public Spu querySpuById(Long id) {
         return this.spuMapper.selectByPrimaryKey(id);
     }
     public void sendMsg(String str,Long id){
@@ -187,5 +187,9 @@ public class GoodsService {
         } catch (Exception e) {
             System.out.println(e);
         }
+    }
+
+    public Sku querySkuById(Long id) {
+        return this.skuMapper.selectByPrimaryKey(id);
     }
 }

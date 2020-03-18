@@ -38,11 +38,11 @@
             <div class="checkout-tit">
                 <h4 class="fl tit-txt">
                     <span class="success-icon"></span>
-                    <span class="success-info">订单提交成功，请您及时付款！订单号：{{order.orderId}}</span>
+                    <span class="success-info">订单提交成功，请您及时付款！订单号：{{this.order.orderId}}</span>
                 </h4>
                 <span class="fr">
 						<em class="sui-lead">应付金额：</em>
-						<em class="orange money">￥{{ly.formatPrice(order.actualPay)}}</em>元</span>
+						<em class="orange money">￥{{ly.formatPrice(order.allPrice)}}</em>元</span>
                 <div class="clearfix"></div>
             </div>
             <div class="checkout-steps">
@@ -85,63 +85,48 @@
 <script>
     var payVm = new Vue({
         el: "#payVm",
-        data() {
-            return {
-                ly,
-                order: {}
-            }
+        data: {
+            ly,
+            order: {}
+
         },
         created() {
-
-            ly.http.get("/auth/verify").then(() => {
-                // 获取订单id
-                const id = ly.getUrlParam("id");
-                // 查询订单
-                ly.http.get("/order-service/order/" + id).then(resp => {
-                    this.order = resp.data;
-                    this.order.orderId = id;
-                    // 判断订单状态
-                    if (this.order.orderStatus.status !== 1) {
-                        alert("订单已支付！");
-                        location.href = "/paysuccess.html?orderId=" + id;
-                    }
-                    // 生成付款链接
-                    ly.http.get("/order-service/order/url/" + id).then(resp => {
-                        new QRCode(document.getElementById("qrImage"), {
-                            text: resp.data,
+            const id = ly.getUrlParam("orderId");
+            const totalPrice = parseInt(ly.getUrlParam("totalPrice"));
+            this.order.orderId = id;
+            this.order.allPrice = totalPrice;
+            ly.http.get("auth/verify").then(() => {
+                ly.http.get("order/order/url/"+this.order.orderId).then(({data})=>{
+                    new QRCode(document.getElementById("qrImage"), {
+                            text: data,
                             width: 250,
                             height: 250,
                             colorDark: "#000000",
                             colorLight: "#ffffff",
                             correctLevel: QRCode.CorrectLevel.H
                         });
-
-                    })
-                    // 开启定时任务，查询付款状态
-                    const taskId = setInterval(() => {
-                        ly.http.get("/order-service/order/state/" + id)
-                            .then(resp => {
-                                let i = resp.data;
-                                if (i === 1) {
-                                    // 付款成功
-                                    clearInterval(taskId);
-                                    // 跳转到付款成功页
-                                    location.href = "/paysuccess.html?orderId=" + id;
-                                } else if (i === 2) {
-                                    // 付款失败
-                                    clearInterval(taskId);
-                                    // 跳转到付款失败页
-                                    location.href = "/payfail.html";
-                                }
-                            }).catch((e) => {
-                                alert("支付状态查询失败，请刷新页面重试。");
-                                clearInterval(taskId);
-                            })
-                    }, 3000);
                 })
+                // 开启定时任务，查询付款状态
+                const taskId = setInterval(() => {
+                    ly.http.get("order/order/state/" + this.order.orderId)
+                        .then(resp => {
+                            let i = resp.data;
+                            // if (i === 1) {
+                            //     // 付款成功
+                            //     clearInterval(taskId);
+                            //     // 跳转到付款成功页
+                                location.href = "/paysuccess.html?orderId=" + this.order.orderId+"&paySalay="+this.order.allPrice;
+                            //}
+                            // else if (i === 2) {
+                            //     // 付款失败
+                            //     clearInterval(taskId);
+                            //     // 跳转到付款失败页
+                            //     location.href = "/payfail.html";
+                            // }
+                        })
+                }, 3000);
+            }).catch(()=>{
 
-            }).catch(() => {
-                window.location.href = "/login.html?returnUrl=" + window.location.href;
             })
         },
         components: {

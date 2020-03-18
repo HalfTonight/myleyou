@@ -88,12 +88,22 @@ public class GoodsController {
     */
     @GetMapping("spu/{id}")
     public ResponseEntity<Spu> querySpuById(@PathVariable("id") Long id){
-        Spu spu=this.goodsService.querySkuById(id);
+        Spu spu=this.goodsService.querySpuById(id);
         if(spu==null){
             return ResponseEntity.notFound().build();
 
         }
         return ResponseEntity.ok(spu);
+    }
+
+    @GetMapping("sku/{id}")
+    public ResponseEntity<Sku> querySkuById(@PathVariable("id") Long id){
+        Sku sku=this.goodsService.querySkuById(id);
+        if(sku==null){
+            return ResponseEntity.notFound().build();
+
+        }
+        return ResponseEntity.ok(sku);
     }
 
 }

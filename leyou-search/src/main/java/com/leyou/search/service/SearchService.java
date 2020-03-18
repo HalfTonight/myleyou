@@ -160,13 +160,13 @@ public class SearchService {
         if(StringUtils.isBlank(key)){
             return null;
         }
-        //自定义查询构建器
+        //自定义查询构建器，相当于原生的queryString()
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         //
         //QueryBuilder basicQuery = QueryBuilders.matchQuery("all", searchRequest.getKey()).operator(Operator.AND);
         QueryBuilder boolBasicQuery=buildBooleanQueryBuilder(searchRequest);
         queryBuilder.withQuery(boolBasicQuery);
-       //
+       //分页  从0开始
         queryBuilder.withPageable(PageRequest.of(searchRequest.getPage()-1,searchRequest.getSize()));
        //
         queryBuilder.withSourceFilter(new FetchSourceFilter(new String[]{"id","skus","subTitle"},null));
