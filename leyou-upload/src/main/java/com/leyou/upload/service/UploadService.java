@@ -53,7 +53,6 @@ public class UploadService {
             //返回路径
             //1. return  "http://image.leyou.com/" + originalFilename;
             //返回路径
-
             return  "http://image.leyou.com/"+ storePath.getFullPath();
     }
 

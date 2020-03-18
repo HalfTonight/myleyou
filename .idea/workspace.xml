@@ -2,175 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e113740-49cc-49fd-b342-6992ffe1851e" name="Default Changelist" comment="检测可运行">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leyou-protal/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-common/src/main/java/com/leyou/auth/entity/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-common/src/main/java/com/leyou/auth/utils/JwtConstans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-common/src/main/java/com/leyou/auth/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-common/src/main/java/com/leyou/auth/utils/ObjectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-common/src/main/java/com/leyou/auth/utils/RsaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/LeyouAuthApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/client/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/propertties/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/test/java/com/leyou/test/JwtTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/src/test/java/com/leyou/test/RedisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/target/classes/META-INF/leyou-auth-service.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth-service/target/test-classes/com/leyou/test/RedisTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/leyou-auth.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-auth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/leyou-cart.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/LeyouCartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/client/GoodsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/config/LoginConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/configure/LoginIntercptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/pojo/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/properties/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/java/com/leyou/cart/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/LeyouCartApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/client/GoodsClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/config/LoginConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/configure/LoginIntercptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/controller/CartController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/pojo/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/properties/JwtProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-cart/target/classes/com/leyou/cart/service/CartService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-common/src/main/java/com/leyou/commom/utils/CookieUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-common/src/main/java/com/leyou/commom/utils/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-common/src/main/java/com/leyou/commom/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-common/src/main/java/com/leyou/commom/utils/NumberUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-gateway/src/main/java/com/leyou/gateway/filter/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-gateway/src/main/java/com/leyou/gateway/properties/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-gateway/src/main/java/com/leyou/gateway/properties/WhiteListProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-gateway/target/classes/com/leyou/gateway/properties/JwtProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-gateway/target/classes/com/leyou/gateway/properties/WhiteListProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/LeyouOrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/config/IdWorkerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/config/IdWorkerProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/config/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/config/PayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/config/PayProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/mapper/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/mapper/OrderStatusMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/pojo/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/pojo/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/order/service/api/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/utils/PayHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/java/com/leyou/utils/PayState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/LeyouOrderApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/config/IdWorkerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/config/IdWorkerProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/config/JwtProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/config/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/config/PayConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/config/PayProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/config/SwaggerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/controller/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/mapper/OrderDetailMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/mapper/OrderMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/mapper/OrderStatusMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/pojo/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/pojo/OrderDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/pojo/OrderStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/service/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/order/service/api/GoodsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/utils/PayHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/com/leyou/utils/PayState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-order/target/classes/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-sms-service/leyou-sms-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-sms-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-sms-service/src/main/java/com/leyou/LeyouSmsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-sms-service/src/main/java/com/leyou/sms/listener/SmsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-sms-service/src/main/java/com/leyou/sms/properties/SmsProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-sms-service/src/main/java/com/leyou/sms/utils/SmsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-sms-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-interface/src/main/java/com/leyou/user/api/UserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-interface/src/main/java/com/leyou/user/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/java/com/leyou/LeyouUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/java/com/leyou/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/java/com/leyou/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/java/com/leyou/user/propertties/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/java/com/leyou/user/service/UserCodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/java/com/leyou/user/utils/CodecUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/target/classes/com/leyou/LeyouUserApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/target/classes/com/leyou/user/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/target/classes/com/leyou/user/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/target/classes/com/leyou/user/propertties/JwtProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/UserCodeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/leyou-user-service/target/classes/com/leyou/user/utils/CodecUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/getOrderInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/getOrderInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/pay.html" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/pay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/paysuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/paysuccess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leyou-protal/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/Leyou-protal/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/src/main/java/com/leyou/LeyouGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/src/main/java/com/leyou/LeyouGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/target/classes/com/leyou/LeyouGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/target/classes/com/leyou/LeyouGatewayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-goods-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-goods-web/src/main/resources/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/resources/templates/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-goods-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-goods-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-goods-web/target/classes/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-goods-web/target/classes/templates/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/api/GoodsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/api/GoodsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-interface/target/classes/com/leyou/api/GoodsApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/target/classes/com/leyou/api/GoodsApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/com/leyou/item/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/com/leyou/item/controller/GoodsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/GoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-manage-web/src/pages/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-manage-web/src/pages/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-manage-web/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-manage-web/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-registy/src/main/java/com/leyou/LeyouRegistryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-registy/src/main/java/com/leyou/LeyouRegistryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-registy/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-registy/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-registy/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-registy/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-registy/target/classes/com/leyou/LeyouRegistryApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-registy/target/classes/com/leyou/LeyouRegistryApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-search/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-search/target/classes/com/leyou/search/service/SearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/target/classes/com/leyou/search/service/SearchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-upload/src/main/java/com/leyou/upload/controller/LeyouUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-upload/src/main/java/com/leyou/upload/controller/LeyouUploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leyou-upload/src/main/java/com/leyou/upload/service/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-upload/src/main/java/com/leyou/upload/service/UploadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-upload/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-upload/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-upload/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-upload/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-upload/target/classes/com/leyou/upload/controller/LeyouUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-upload/target/classes/com/leyou/upload/controller/LeyouUploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -533,8 +366,16 @@
       <workItem from="1583721499175" duration="4400000" />
       <workItem from="1584097259462" duration="2069000" />
       <workItem from="1584153180429" duration="4488000" />
-      <workItem from="1584530398927" duration="1358000" />
+      <workItem from="1584530398927" duration="1514000" />
     </task>
+    <task id="LOCAL-00001" summary="检测可运行">
+      <created>1584531877922</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584531877922</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,10 +478,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1582859155088" />
-    <state x="351" y="7" key="CommitChangelistDialog2" timestamp="1584531857043">
+    <state x="351" y="7" key="CommitChangelistDialog2" timestamp="1584531918259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="351" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584531857043" />
+    <state x="351" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584531918259" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1584531646502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
